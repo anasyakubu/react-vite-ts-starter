@@ -86,13 +86,13 @@ Open [http://localhost:5173](http://localhost:5173) to view the app in the brows
 ├── public/              # Static files
 ├── src/                 # Source files
 │   ├── home/            # Home component
-│   │   └── Home.jsx     # Main Home page component
-│   ├── App.jsx          # Main application component
-│   ├── main.jsx         # Application entry point
+│   │   └── Home.tsx     # Main Home page component
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Application entry point
 │   ├── index.css        # Tailwind CSS imports
 │   └── App.css          # Additional CSS (optional)
-├── tailwind.config.js   # Tailwind CSS configuration
-├── postcss.config.js    # PostCSS configuration
+├── tailwind.config.ts   # Tailwind CSS configuration
+├── postcss.config.ts    # PostCSS configuration
 ├── package.json         # Project metadata and dependencies
 └── README.md            # Project documentation
 ```
@@ -124,8 +124,8 @@ To modify the home page:
 
 To add new pages and routes:
 
-1. Create a new component in the `src/pages` folder (e.g., `About.jsx`).
-2. Update `App.jsx` to include the new route:
+1. Create a new component in the `src/pages` folder (e.g., `About.tsx`).
+2. Update `App.tsx` to include the new route:
 
 ```jsx
 <Routes>
@@ -136,7 +136,7 @@ To add new pages and routes:
 
 ### 3. **Tailwind CSS Customization**
 
-You can extend the Tailwind CSS theme by editing the `tailwind.config.js` file:
+You can extend the Tailwind CSS theme by editing the `tailwind.config.ts` file:
 
 ```javascript
 module.exports = {
